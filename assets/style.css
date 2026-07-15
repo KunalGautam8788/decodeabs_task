@@ -1,0 +1,83 @@
+/* Main App Background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+    color: white;
+}
+
+/* Title */
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #818cf8
+    );
+    background-clip: text;
+-webkit-background-clip: text;
+
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+/* Chat Messages */
+.stChatMessage {
+    border-radius: 16px;
+    padding: 12px;
+    backdrop-filter: blur(10px);
+}
+
+/* User Message */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Assistant Message */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0b1120;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Buttons */
+.stButton button {
+    width: 100%;
+    border-radius: 10px;
+    height: 45px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Input Box */
+.stChatInputContainer {
+    border-radius: 15px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
